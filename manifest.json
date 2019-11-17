@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "SelfWealth - Don't Panic!",
+  "description": "Will you keep a cool head during the next crash? You say you're investing for the long term, but will you keep buying through thick and thin? The SelfWealth - Don't Panic! extension hides performance graphs, portfolio totals and other page elements to help you manage your emotions while investing. You can still buy shares as normal with this extension, it just hides all the temptations. Note, this is not an official SelfWealth extension.",
+  "version": "0.1.0",
+ 
+  "browser_action": {
+  	"default_popup": "popup.html" 
+  },
+  "permissions": [
+  	"activeTab",
+  	"https://secure.selfwealth.com.au/"
+  ],
+
+  "content_scripts": [{
+    "js": ["jquery-3.4.1.min.js", "content.js"],
+    "matches": ["https://secure.selfwealth.com.au/*"],
+    "run_at": "document_start"
+  }]
+}
