@@ -22,4 +22,7 @@ $( document ).ready(function() {
 			}
 		});
 	});
+
+	// hide the Comparisons menu item
+	$('.nav-compare').hide();
 });

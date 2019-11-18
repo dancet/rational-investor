@@ -1,8 +1,10 @@
 // TODO
 /*
 
-- Create a function that returns a random quote and plug it into the other files
+- Finish QAing settings.js and the SW Settings page
 - Keep adding more page handing
+- Try to remove the nasty loop in menu.js (use the advanced selectors from settings.js)
+- Remove the title hover in the menu also
 - Pick a name that makes sense (broker agnostic)
 
 */
@@ -31,15 +33,46 @@
     },
     // dashboard
     {
-      "matches": ["https://secure.selfwealth.com.au/", "https://secure.selfwealth.com.au/?_ga*"],
+      "matches": [
+        "https://secure.selfwealth.com.au/", 
+        "https://secure.selfwealth.com.au/?_ga*", 
+        "https://secure.selfwealth.com.au/1", 
+        "https://secure.selfwealth.com.au/2", 
+        "https://secure.selfwealth.com.au/3",
+        "https://secure.selfwealth.com.au/4"
+      ],
       "js": ["dashboard.js"],
       "run_at": "document_start"
     },
     // portfolio
     {
-      "matches": ["https://secure.selfwealth.com.au/Portfolio"],
+      "matches": [
+        "https://secure.selfwealth.com.au/Portfolio",
+        "https://secure.selfwealth.com.au/1/Portfolio",
+        "https://secure.selfwealth.com.au/2/Portfolio",
+        "https://secure.selfwealth.com.au/3/Portfolio",
+        "https://secure.selfwealth.com.au/4/Portfolio"
+      ],
       "js": ["portfolio.js"],
       "run_at": "document_start"
-    }
+    },
+    // place orders
+    {
+      "matches": [
+        "https://secure.selfwealth.com.au/Trading/Place",
+        "https://secure.selfwealth.com.au/1/Trading/Place",
+        "https://secure.selfwealth.com.au/2/Trading/Place",
+        "https://secure.selfwealth.com.au/3/Trading/Place",
+        "https://secure.selfwealth.com.au/4/Trading/Place"
+      ],
+      "js": ["place-orders.js"],
+      "run_at": "document_idle"
+    },
+    // settings
+    {
+      "matches": ["https://secure.selfwealth.com.au/Settings"],
+      "js": ["settings.js"],
+      "run_at": "document_idle"
+    }    
   ]
 }
