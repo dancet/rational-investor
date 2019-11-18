@@ -2,7 +2,7 @@
 // Twitter: @tomdance
 
 $( document ).ready(function() {
-	
+
 	// hide the Holdings and Net Portfolio amounts in the menu
 	$('.account-overview').each(function(i, obj) {
 
@@ -15,7 +15,7 @@ $( document ).ready(function() {
 			// index 0 = holdings
 			// index 4 = net portfolio
 			if (i == 0 || i == 4) {
-				$(obj).replaceWith( "<span style='color: #000000; background-color: #000000'>hidden ;)</span>" );	
+				$(obj).replaceWith( "<span style='color: #000000; background-color: #000000'>Don't worry about it :)</span>" );	
 			}
 		});
 	});

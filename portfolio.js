@@ -1,15 +1,6 @@
 // By Tom Dance <tom.dance@gmail.com>
 // Twitter: @tomdance
 
-/*
-TODO
-
-- Blank out select cells in the table, show  the weight though
-- Hide the summary row at the bottom of the table
-- Hide overall distribution at the bottom (net worth, etc)
-
-*/
-
 $( document ).ready(function() {
 
 	// hide the my portfolio performance widget
@@ -17,7 +8,7 @@ $( document ).ready(function() {
 
 		// index 0 = my portfolio performance
 		if (i == 0) {
-			$(obj).replaceWith( "<h3>Our favorite holding period is forever. - Warren Buffett</h3>" );
+			$(obj).replaceWith( "<h3>" + quotes[0] + "</h3>" );
 		}
 	});
 
@@ -29,9 +20,9 @@ $( document ).ready(function() {
 		}
 	});	
 
-	// hide certain values in the holdings table
+	// hide the holdings table (portfolio weighting is available from the Graph > Holdings tab)
+	$('#table').replaceWith( "<h3>Our favorite holding period is forever. - Warren Buffett</h3>" );
 
-
-
-
+	// hide the numbers in the overall distribution (holdings + cash, assets, liabilities, net worth)
+	$('#totals').replaceWith( "<h3>Our favorite holding period is forever. - Warren Buffett</h3>" );
 });

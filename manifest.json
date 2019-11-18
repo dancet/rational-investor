@@ -1,3 +1,12 @@
+// TODO
+/*
+
+- Create a function that returns a random quote and plug it into the other files
+- Keep adding more page handing
+- Pick a name that makes sense (broker agnostic)
+
+*/
+
 {
   "manifest_version": 2,
  
@@ -15,13 +24,18 @@
 
   "content_scripts": [
     {
-    "matches": ["https://secure.selfwealth.com.au/"],
-    "js": ["jquery-3.4.1.min.js", "menu.js", "dashboard.js"],
-    "run_at": "document_start"
+      "matches": ["https://secure.selfwealth.com.au/*"],
+      "js": ["jquery-3.4.1.min.js", "menu.js"],
+      "run_at": "document_start"
+    },    
+    {
+      "matches": ["https://secure.selfwealth.com.au/", "https://secure.selfwealth.com.au/?_ga*"],
+      "js": ["jquery-3.4.1.min.js", "dashboard.js"],
+      "run_at": "document_start"
     },
     {
       "matches": ["https://secure.selfwealth.com.au/Portfolio"],
-      "js": ["jquery-3.4.1.min.js", "menu.js", "portfolio.js"],
+      "js": ["jquery-3.4.1.min.js", "portfolio.js", "quotes.js"],
       "run_at": "document_start"
     }
 
