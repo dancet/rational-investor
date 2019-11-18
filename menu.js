@@ -1,6 +1,9 @@
 // By Tom Dance <tom.dance@gmail.com>
 // Twitter: @tomdance
 
+// import utils (as this file matches *, it's accessible everywhere)
+chrome.runtime.getURL('utils.js');
+
 $( document ).ready(function() {
 
 	// hide the Holdings and Net Portfolio amounts in the menu

@@ -23,21 +23,23 @@
   ],
 
   "content_scripts": [
+    // all pages
     {
       "matches": ["https://secure.selfwealth.com.au/*"],
-      "js": ["jquery-3.4.1.min.js", "menu.js"],
-      "run_at": "document_start"
-    },    
-    {
-      "matches": ["https://secure.selfwealth.com.au/", "https://secure.selfwealth.com.au/?_ga*"],
-      "js": ["jquery-3.4.1.min.js", "dashboard.js"],
+      "js": ["jquery-3.4.1.min.js", "utils.js", "menu.js"],
       "run_at": "document_start"
     },
+    // dashboard
+    {
+      "matches": ["https://secure.selfwealth.com.au/", "https://secure.selfwealth.com.au/?_ga*"],
+      "js": ["dashboard.js"],
+      "run_at": "document_start"
+    },
+    // portfolio
     {
       "matches": ["https://secure.selfwealth.com.au/Portfolio"],
-      "js": ["jquery-3.4.1.min.js", "portfolio.js", "quotes.js"],
+      "js": ["portfolio.js"],
       "run_at": "document_start"
     }
-
   ]
 }
