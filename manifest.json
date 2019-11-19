@@ -1,11 +1,12 @@
 // TODO
 /*
 
-- Finish QAing settings.js and the SW Settings page
-- Keep adding more page handing
-- Try to remove the nasty loop in menu.js (use the advanced selectors from settings.js)
-- Remove the title hover in the menu also
 - Pick a name that makes sense (broker agnostic)
+- Create an icon
+- Create a basic HTML file in popup.html with some basic info
+- Build an actual extension and try installing it
+- Do we need the permissions array in manifest.json?
+- Publish?
 
 */
 
@@ -30,6 +31,12 @@
       "matches": ["https://secure.selfwealth.com.au/*"],
       "js": ["jquery-3.4.1.min.js", "utils.js", "menu.js"],
       "run_at": "document_start"
+    },
+    // menu2 (to handle title properties that need to run on document_idle)
+    {
+      "matches": ["https://secure.selfwealth.com.au/*"],
+      "js": ["menu2.js"],
+      "run_at": "document_idle"
     },
     // dashboard
     {
