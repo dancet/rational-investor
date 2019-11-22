@@ -1,9 +1,9 @@
 // TODO
 /*
 
-- Build an actual extension and try installing it
-- Do we need the permissions array in manifest.json?
-- Publish?
+- Publish the extension on the Chrome web store
+- Add support for CommSec
+- Add support for CMC Markets
 
 */
 
