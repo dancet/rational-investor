@@ -13,7 +13,7 @@ Portfolio allocation by percentage is still accessible (where possible) to help 
 ## Supported stock brokers
 Currently Rational Investor supports the following brokers:
 
-* selfwealth.com.au
+* [selfwealth.com.au](selfwealth.com.au)
 
 ## Installation
 
