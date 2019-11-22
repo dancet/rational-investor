@@ -17,13 +17,17 @@ Currently Rational Investor supports the following brokers:
 
 ## Installation
 
-* todo
+1. Download rational-investor.crx
+2. Open your Chrome extension page by browsing to [chrome://extensions/](chrome://extensions/)
+3. Drag the rational-investor.crx file into the extensions page
+4. Read and accept any notices Chrome displays
 
 ## How to use this extension
 
-1. Download the extension and install
-2. Log in to your supported broker of choice
-3. Enjoy clear headed investing
+1. Log in to your supported broker of choice
+2. Enjoy clear headed investing
+
+That's it, the extension does everything for you. No confguration needed. 
 
 ## FAQ
 

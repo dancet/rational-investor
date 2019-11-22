@@ -1,8 +1,6 @@
 // TODO
 /*
 
-- Create an icon
-- Create a basic HTML file in popup.html with some basic info
 - Build an actual extension and try installing it
 - Do we need the permissions array in manifest.json?
 - Publish?
@@ -12,18 +10,18 @@
 {
   "manifest_version": 2,
  
-  "name": "SelfWealth - Don't Panic!",
-  "description": "Will you keep a cool head during the next crash? You say you're investing for the long term, but will you keep buying through thick and thin? The SelfWealth - Don't Panic! extension hides performance graphs, portfolio totals and other page elements to help you manage your emotions while investing. You can still buy shares as normal with this extension, it just hides all the temptations. Note, this is not an official SelfWealth extension.",
+  "name": "Rational Investor",
+  "description": "Will you keep a cool head during the next crash?",
   "version": "0.1.0",
+  "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png" 
+  },
  
   "browser_action": {
     "default_popup": "popup.html" 
   },
-  "permissions": [
-    "activeTab",
-    "https://secure.selfwealth.com.au/"
-  ],
-
   "content_scripts": [
     // all pages
     {
