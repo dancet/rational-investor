@@ -2,6 +2,8 @@
 /*
 
 - Pick a name that makes sense (broker agnostic)
+- Rename repo accordingly
+- Add content to README
 - Create an icon
 - Create a basic HTML file in popup.html with some basic info
 - Build an actual extension and try installing it
