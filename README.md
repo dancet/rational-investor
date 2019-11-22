@@ -1,5 +1,5 @@
 # Rational Investor
-##Background
+## Background
 Rational investor is a Google Chrome extension for keeping your head clear while investing in shares through Australian stock brokers. 
 
 Most days, share markets will gain or lose value. It can be intimitating trying to build up your portfolio over time with a sensible buy and hold strategy while seeing your holdings have dropped invalue hundreds of thousands of dollars in a day. 
@@ -10,22 +10,22 @@ It also hides the details of your holdings and the sell button, so you can't sel
 
 Portfolio allocation by percentage is still accessible (where possible) to help with rebalancing when buying more shares. 
 
-##Supported stock brokers
+## Supported stock brokers
 Currently Rational Investor supports the following brokers:
 
 * selfwealth.com.au
 
-##Installation
+## Installation
 
 * todo
 
-##How to use this extension
+## How to use this extension
 
 1. Download the extension and install
 2. Log in to your supported broker of choice
 3. Enjoy clear headed investing
 
-##FAQ
+## FAQ
 
 **Q:** I feel uneasy about running this extension, can you explain how it works?
 
