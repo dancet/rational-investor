@@ -1,15 +1,5 @@
-// TODO
-/*
-
-- Publish the extension on the Chrome web store
-- Add support for CommSec
-- Add support for CMC Markets
-
-*/
-
 {
   "manifest_version": 2,
- 
   "name": "Rational Investor",
   "description": "Will you keep a cool head during the next crash?",
   "version": "1.0.0",
@@ -23,19 +13,16 @@
     "default_popup": "popup.html" 
   },
   "content_scripts": [
-    // all pages
     {
       "matches": ["https://secure.selfwealth.com.au/*"],
       "js": ["jquery-3.4.1.min.js", "utils.js", "menu.js"],
       "run_at": "document_start"
     },
-    // menu2 (to handle title properties that need to run on document_idle)
     {
       "matches": ["https://secure.selfwealth.com.au/*"],
       "js": ["menu2.js"],
       "run_at": "document_idle"
     },
-    // dashboard
     {
       "matches": [
         "https://secure.selfwealth.com.au/", 
@@ -48,7 +35,6 @@
       "js": ["dashboard.js"],
       "run_at": "document_start"
     },
-    // portfolio
     {
       "matches": [
         "https://secure.selfwealth.com.au/Portfolio",
@@ -60,7 +46,6 @@
       "js": ["portfolio.js"],
       "run_at": "document_start"
     },
-    // place orders
     {
       "matches": [
         "https://secure.selfwealth.com.au/Trading/Place",
@@ -72,7 +57,6 @@
       "js": ["place-orders.js"],
       "run_at": "document_idle"
     },
-    // settings
     {
       "matches": ["https://secure.selfwealth.com.au/Settings"],
       "js": ["settings.js"],

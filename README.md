@@ -57,3 +57,9 @@ If you're certain you need to sell or want to view your portfolio, here are a fe
 **Q:** My question isn't answered, where can I find an answer?
 
 **A:** Open an issue on GitHub or contact me on [Twitter @tomdance](https://twitter.com/tomdance)
+
+## Todo
+
+* Add support for CommSec
+* Add support for CMC Markets
+* Consider finding someone to add support for major broker platforms in the US and/or UK
