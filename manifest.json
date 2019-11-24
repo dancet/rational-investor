@@ -12,7 +12,7 @@
  
   "name": "Rational Investor",
   "description": "Will you keep a cool head during the next crash?",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "icons": { 
     "16": "icon16.png",
     "48": "icon48.png",
