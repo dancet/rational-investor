@@ -72,6 +72,16 @@
       "matches": ["https://portfolio.sharesight.com/*"],
       "js": ["util/jquery-3.4.1.min.js", "util/utils.js", "websites/sharesight/overview.js"],
       "run_at": "document_start"
-    }  
+    },
+    {
+      "matches": ["https://portfolio.sharesight.com/holdings/*"],
+      "js": ["websites/sharesight/holdings.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://portfolio.sharesight.com/portfolios/my/*"],
+      "js": ["websites/sharesight/my-portfolios.js"],
+      "run_at": "document_start"
+    }
   ]
 }
