@@ -4,9 +4,9 @@
   "description": "Will you keep a cool head during the next crash?",
   "version": "1.0.0",
   "icons": { 
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png" 
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png" 
   },
  
   "browser_action": {
@@ -18,12 +18,12 @@
     *****************/
     {
       "matches": ["https://secure.selfwealth.com.au/*"],
-      "js": ["jquery-3.4.1.min.js", "utils.js", "menu.js"],
+      "js": ["util/jquery-3.4.1.min.js", "util/utils.js", "websites/selfwealth/menu.js"],
       "run_at": "document_start"
     },
     {
       "matches": ["https://secure.selfwealth.com.au/*"],
-      "js": ["menu2.js"],
+      "js": ["websites/selfwealth/menu2.js"],
       "run_at": "document_idle"
     },
     {
@@ -35,7 +35,7 @@
         "https://secure.selfwealth.com.au/3",
         "https://secure.selfwealth.com.au/4"
       ],
-      "js": ["dashboard.js"],
+      "js": ["websites/selfwealth/dashboard.js"],
       "run_at": "document_start"
     },
     {
@@ -46,7 +46,7 @@
         "https://secure.selfwealth.com.au/3/Portfolio",
         "https://secure.selfwealth.com.au/4/Portfolio"
       ],
-      "js": ["portfolio.js"],
+      "js": ["websites/selfwealth/portfolio.js"],
       "run_at": "document_start"
     },
     {
@@ -57,12 +57,12 @@
         "https://secure.selfwealth.com.au/3/Trading/Place",
         "https://secure.selfwealth.com.au/4/Trading/Place"
       ],
-      "js": ["place-orders.js"],
+      "js": ["websites/selfwealth/place-orders.js"],
       "run_at": "document_idle"
     },
     {
       "matches": ["https://secure.selfwealth.com.au/Settings"],
-      "js": ["settings.js"],
+      "js": ["websites/selfwealth/settings.js"],
       "run_at": "document_idle"
     },
     /*****************
@@ -70,7 +70,7 @@
     *****************/    
     {
       "matches": ["https://portfolio.sharesight.com/*"],
-      "js": ["jquery-3.4.1.min.js", "utils.js", "sharesight_overview.js"],
+      "js": ["util/jquery-3.4.1.min.js", "util/utils.js", "websites/sharesight/overview.js"],
       "run_at": "document_start"
     }  
   ]
