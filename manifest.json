@@ -13,9 +13,6 @@
     "default_popup": "popup.html" 
   },
   "content_scripts": [
-    /*****************
-      selfwealth
-    *****************/
     {
       "matches": ["https://secure.selfwealth.com.au/*"],
       "js": ["util/jquery-3.4.1.min.js", "util/utils.js", "websites/selfwealth/menu.js"],
@@ -65,9 +62,6 @@
       "js": ["websites/selfwealth/settings.js"],
       "run_at": "document_idle"
     },
-    /*****************
-      sharesight
-    *****************/    
     {
       "matches": ["https://portfolio.sharesight.com/*"],
       "js": ["util/jquery-3.4.1.min.js", "util/utils.js", "websites/sharesight/overview.js"],

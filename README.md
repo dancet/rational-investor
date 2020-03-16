@@ -1,19 +1,21 @@
 # Rational Investor
 ## Background
-Rational investor is a Google Chrome extension for keeping your head clear while investing in shares through Australian stock brokers. 
+NEW: Added support for sharesight.com 
+
+Rational investor is a Google Chrome extension for keeping your head clear while investing in shares through Australian stock brokers and using portfolio managers. 
 
 Most days, share markets will gain or lose value. It can be intimidating trying to build up your portfolio over time with a sensible buy and hold strategy while seeing your holdings have dropped in value hundreds or thousands of dollars in a day. 
 
-This extensions hides parts of common Aussie stock broking websites that may influence negative investor behaviour in bad times. Things like daily share price movement, comparisons with indexes and your total portfolio amount are all hidden on purpose. 
+This extensions hides parts of common Aussie stock broking and portfolio management websites that may influence negative investor behaviour in bad times. Things like daily share price movement, comparisons with indexes and your total portfolio amount are all hidden on purpose. It also hides the details of your holdings and the sell button, so you can't sell anything while this extension is running. 
 
-It also hides the details of your holdings and the sell button, so you can't sell anything while this extension is running. 
+Other operations like buying, adding positions to management tools and portfolio allocation by percentage are still accessible. 
 
-Portfolio allocation by percentage is still accessible (where possible) to help with rebalancing when buying more shares. 
+Please let us know what other brokers or management tools you would like to see supported.
 
-## Supported stock brokers
-Currently Rational Investor supports the following brokers:
+## Supported products
 
 * [https://selfwealth.com.au](https://selfwealth.com.au)
+* [https://sharesight.com](https://sharesight.com)
 
 ## Installation
 
@@ -27,7 +29,7 @@ OR
 
 ## How to use this extension
 
-1. Log in to your supported broker of choice
+1. Log in to your supported broker or portfolio manager of choice
 2. Enjoy clear headed investing
 
 That's it, the extension does everything for you. No confguration needed. 
@@ -52,9 +54,9 @@ If you're certain you need to sell or want to view your portfolio, here are a fe
 3. Temporarily disable the Rational Investor extension in Chrome (remember to re-enable it later)
 
 
-**Q:** I don't see my broker in the list of supported brokers, can you add it?
+**Q:** I don't see my broker or portfolio manager in the supported list, can you add it?
 
-**A:** I am trying to add more brokers, but it will take time. If you are handy with JavaScript, please feel free to submit a PR with support for your favourite broker. 
+**A:** I am trying to add more products, but it will take time. If you are handy with JavaScript, please feel free to submit a PR with support for your favourite broker or manager. 
 
 
 **Q:** My question isn't answered, where can I find an answer?
