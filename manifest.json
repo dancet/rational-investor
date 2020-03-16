@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Rational Investor",
   "description": "Will you keep a cool head during the next crash?",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "icons": { 
     "16": "images/icon16.png",
     "48": "images/icon48.png",
