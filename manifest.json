@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Rational Investor",
   "description": "Will you keep a cool head during the next crash?",
   "version": "2.0.0",
