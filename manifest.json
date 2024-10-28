@@ -76,6 +76,16 @@
       "matches": ["https://portfolio.sharesight.com/portfolios/my/*"],
       "js": ["websites/sharesight/my-portfolios.js"],
       "run_at": "document_start"
+    },
+    {
+      "matches": ["https://pearler.com/*"],
+      "js": ["util/jquery-3.4.1.min.js", "util/utils.js", "util/arrive.min.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://pearler.com/*"],
+      "js": ["websites/pearler/dashboard.js"],
+      "run_at": "document_end"
     }
   ]
 }

@@ -6,6 +6,8 @@ chrome.runtime.getURL('utils.js');
 
 $( document ).ready(function() {
 
+	alert("yeah!!!");
+
 	// hide the portfolio value in the header
 	$('[class^="Statsstyled__StatsWrapper"]').replaceWith( "<span style='color: #000000; background-color: #000000; margin-left: auto; margin-right: 0'>Don't worry about it :)</span>" );
 
